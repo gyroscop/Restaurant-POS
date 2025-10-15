@@ -1,18 +1,38 @@
 import React from "react";
-import BottomNav from "../components/shared/BottomNav";
+import Greetings from "../components/home/Greetings";
+import { RiMoneyRupeeCircleFill } from "react-icons/ri";
+import { BiSolidBowlHot } from "react-icons/bi";
+import MiniCard from "../components/home/MiniCard";
 
 const Home = () => {
   return (
     <>
       <section className="bg-[#1f1f1f] h-[calc(100vh-5rem)] overflow-hidden flex gap-3">
         {/* Left Div */}
-        <div className="flex-[3] bg-[#1a1a1a]"></div>
+        <div className="flex-[3] bg-[#1a1a1a]">
+          {/* Greetings */}
+
+          <Greetings />
+
+          {/* MiniCards */}
+          <div className="flex justify-between ml-15 mr-15 gap-10">
+            <MiniCard
+              title="Total Earnings"
+              icon={<RiMoneyRupeeCircleFill />}
+              number={512}
+              footerNum={1.2}
+            />
+            <MiniCard
+              title="In Progress"
+              icon={<BiSolidBowlHot />}
+              number={14}
+              footerNum={1.8}
+            />
+          </div>
+        </div>
 
         {/* Left Div */}
         <div className="flex-[2] bg-[#1a1a1a]"></div>
-
-        {/* Bottom Navigation */}
-        <BottomNav />
       </section>
     </>
   );

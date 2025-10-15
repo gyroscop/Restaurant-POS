@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import { Home, Auth, Orders } from "./pages";
 import Header from "./components/shared/Header";
+import BottomNav from "./components/shared/BottomNav";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +16,8 @@ function App() {
           <Route path="/auth" element={<Auth />} />
           <Route path="/orders" element={<Orders />} />
         </Routes>
+        {/* Bottom Navigation */}
+        <BottomNav />
       </Router>
     </>
   );

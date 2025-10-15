@@ -7,7 +7,7 @@ import { GiKnifeFork } from "react-icons/gi";
 
 const BottomNav = () => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-[#262626] p-2 flex justify-evenly items-center">
+    <div className="fixed bottom-0 left-0 right-0 bg-[#262626] p-2 flex justify-around items-center">
       <button className="flex flex-col items-center cursor-pointer text-[#f5f5f5] bg-[#343434] rounded-[25px] w-[300px]">
         {/* <FaHome className="text-[#ababab]" size={31} /> */}
         <FaHome size={31} />
