@@ -3,6 +3,7 @@ import Greetings from "../components/home/Greetings";
 import { RiMoneyRupeeCircleFill } from "react-icons/ri";
 import { BiSolidBowlHot } from "react-icons/bi";
 import MiniCard from "../components/home/MiniCard";
+import RecentOrders from "../components/home/RecentOrders";
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
           <Greetings />
 
           {/* MiniCards */}
-          <div className="flex justify-between ml-15 mr-15 gap-10">
+          <div className="flex justify-between px-8 gap-10">
             <MiniCard
               title="Total Earnings"
               icon={<RiMoneyRupeeCircleFill />}
@@ -29,6 +30,9 @@ const Home = () => {
               footerNum={1.8}
             />
           </div>
+
+          {/* Recent Orders */}
+          <RecentOrders />
         </div>
 
         {/* Left Div */}
