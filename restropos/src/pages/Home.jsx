@@ -4,6 +4,7 @@ import { RiMoneyRupeeCircleFill } from "react-icons/ri";
 import { BiSolidBowlHot } from "react-icons/bi";
 import MiniCard from "../components/home/MiniCard";
 import RecentOrders from "../components/home/RecentOrders";
+import PopularDishes from "../components/home/PopularDishes";
 
 const Home = () => {
   return (
@@ -36,7 +37,9 @@ const Home = () => {
         </div>
 
         {/* Left Div */}
-        <div className="flex-[2] bg-[#1a1a1a]"></div>
+        <div className="flex-[2] bg-[#1a1a1a]">
+          <PopularDishes />
+        </div>
       </section>
     </>
   );

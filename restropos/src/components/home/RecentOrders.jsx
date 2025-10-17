@@ -9,7 +9,7 @@ const RecentOrders = () => {
         <div className="flex justify-between">
           <div className="text-[#f5f5f5] text-2xl font-bold">Recent Orders</div>
           <div className="text-md text-[#f5f5f5] font-semibold underline underline-offset-4">
-            View All
+            <a className="cursor-pointer">View All</a>
           </div>
         </div>
 
