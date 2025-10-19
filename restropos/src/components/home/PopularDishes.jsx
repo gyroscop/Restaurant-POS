@@ -17,7 +17,10 @@ const PopularDishes = () => {
               key={dish.id}
               className="flex bg-[#1f1f1f] mt-2 rounded-lg p-3 justify-between"
             >
-              <div className="flex">
+              <div className="flex items-center">
+                <h1 className="text-[#f5f5f5] text-xl font-bold ml-3 mr-4">
+                  {dish.id < 10 ? `0${dish.id}` : dish.id}
+                </h1>
                 <img
                   src={dish.image}
                   alt={dish.name}
@@ -30,8 +33,8 @@ const PopularDishes = () => {
                 </div>
               </div>
 
-              <div className="items-center text-[#f5f5f5]">
-                <p>Ingredients</p>
+              <div className="flex items-center text-[#f5f5f5]">
+                <a href="/">Ingredients</a>
               </div>
             </div>
           );
