@@ -28,7 +28,10 @@ const BottomNav = () => {
         <GiKnifeFork size={30} />
         <p>New Order</p>
       </button>
-      <button className="flex flex-col items-center cursor-pointer">
+      <button
+        onClick={() => navigate("./table")}
+        className="flex flex-col items-center cursor-pointer"
+      >
         <PiChairFill size={33} />
         <p>Tables</p>
       </button>
